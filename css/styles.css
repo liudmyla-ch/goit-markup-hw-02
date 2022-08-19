@@ -26,21 +26,25 @@ li {
   font-size: 26px;
   line-height: 1.19;
 }
+.logo-web{
+  color: var(--accent-color);
+}
 .contacts.list {
   color: var(--gray-text-color);
 }
-.logo-web,
-.list:hover,
-.list:focus,
-.navigation.list:active {
-  color: var(--accent-color);
-}
-
 .navigation.list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
+  color: var(--main-text-color);
 }
+
+.list:hover,
+.list:focus{
+  color: var(--accent-color);
+}
+
+
 
 .hero {
   background-color: var(--background-darkblue-color);
