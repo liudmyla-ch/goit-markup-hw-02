@@ -13,38 +13,47 @@ body {
   background-color: var(--white-color);
   letter-spacing: 0.03em;
 }
-a {
-  text-decoration: none;
-}
-li {
-  list-style: none;
-}
 .logo {
   color: var(--black-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
 .logo-web {
   color: var(--accent-color);
 }
-.contacts.list {
-  color: var(--gray-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-.navigation.list {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1;
-  color: var(--main-text-color);
+.list {
+  list-style: none;
 }
 
-.list:hover,
-.list:focus {
+.navigation.list,
+.contacts.list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contacts-item {
+  color: var(--gray-text-color);
+  text-decoration: none;
+}
+.navigation-item {
+  line-height: 1;
+  color: var(--main-text-color);
+  text-decoration: none;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.navigation-item:hover,
+.navigation-item:focus,
+.contacts-item:hover,
+.contacts-item:focus,
+.active {
   color: var(--accent-color);
 }
 
@@ -59,7 +68,7 @@ li {
   text-transform: uppercase;
 }
 
-.button {
+.button-hero {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -68,7 +77,7 @@ li {
   letter-spacing: 0.06em;
   cursor: pointer;
 }
-.button.portfolio {
+.button-portfolio {
   background-color: var(--background-gray-color);
   color: var(--main-text-color);
   font-weight: 500;
@@ -76,15 +85,16 @@ li {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
-.button,
-.button.portfolio:hover,
-.button.portfolio:focus {
+.button-hero,
+.button-portfolio:hover,
+.button-portfolio:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
-.button:hover,
-.button:focus {
+.button-hero:hover,
+.button-hero:focus {
   background-color: var(--white-color);
   color: var(--accent-color);
 }
@@ -100,16 +110,22 @@ li {
   clip-path: inset(50%);
   margin: -1px;
 }
-.features.name {
+.features-name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.features.text {
+.features-text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--gray-text-color);
+}
+
+.team {
+  background-color: var(--background-gray-color);
+  font-weight: 400;
+  text-align: center;
 }
 .title {
   font-weight: 700;
@@ -117,38 +133,42 @@ li {
   line-height: 1.16;
   text-align: center;
 }
-.team {
-  background-color: var(--background-gray-color);
-}
-.team-item {
-  text-align: center;
+.team-name {
+  color: var(--main-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
-
-.portfolio-list {
+.team-item {
+  background-color: var(--white-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+.team-profession{
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--gray-text-color);
+}
+.portfolio-item {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--gray-text-color);
+}
+.portfolio-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-}
-.portfolio-list a {
-  color: inherit;
-}
-.team p,
-.portfolio-list p {
-  font-weight: 400;
-  color: var(--gray-text-color);
+  color: var(--main-text-color);
 }
 
-.portfolio-list p {
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-}
-
-footer {
+.footer {
   background-color: var(--background-darkblue-color);
 }
 .footer > .logo,
@@ -161,6 +181,7 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  text-decoration: none;
 }
 .adress:hover,
 .adress:focus {
