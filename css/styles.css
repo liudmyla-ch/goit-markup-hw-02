@@ -31,6 +31,10 @@ li {
 }
 .contacts.list {
   color: var(--gray-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 .navigation.list {
   font-weight: 500;
