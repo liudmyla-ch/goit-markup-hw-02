@@ -26,7 +26,7 @@ li {
   font-size: 26px;
   line-height: 1.19;
 }
-.logo-web{
+.logo-web {
   color: var(--accent-color);
 }
 .contacts.list {
@@ -40,11 +40,9 @@ li {
 }
 
 .list:hover,
-.list:focus{
+.list:focus {
   color: var(--accent-color);
 }
-
-
 
 .hero {
   background-color: var(--background-darkblue-color);
@@ -118,7 +116,7 @@ li {
 .team {
   background-color: var(--background-gray-color);
 }
-.team-item{
+.team-item {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
