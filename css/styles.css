@@ -9,9 +9,8 @@
 }
 body {
   font-family: Roboto, sans-serif;
-  color: #212121;
+  color: var(--main-text-color);
   background-color: var(--white-color);
-  letter-spacing: 0.03em;
 }
 .logo {
   color: var(--black-color);
@@ -20,6 +19,8 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  letter-spacing: 0.03em;
+
 }
 .logo-web {
   color: var(--accent-color);
@@ -59,11 +60,13 @@ body {
 
 .hero {
   background-color: var(--background-darkblue-color);
+  text-align: center;
+}
+.hero-title {
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -93,11 +96,7 @@ body {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
-.button-hero:hover,
-.button-hero:focus {
-  background-color: var(--white-color);
-  color: var(--accent-color);
-}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -115,16 +114,17 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 .features-text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--gray-text-color);
+  letter-spacing: 0.03em;
 }
 
 .team {
   background-color: var(--background-gray-color);
-  font-weight: 400;
   text-align: center;
 }
 .title {
@@ -132,6 +132,7 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 .team-name {
   color: var(--main-text-color);
@@ -145,16 +146,14 @@ body {
   font-weight: 500;
   text-decoration: none;
 }
-.team-profession{
-  font-weight: 400;
-font-size: 16px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color: var(--gray-text-color);
+.team-profession {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--gray-text-color);
 }
 .portfolio-item {
   text-decoration: none;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -177,11 +176,11 @@ color: var(--gray-text-color);
 }
 .adress {
   color: var(--gray-text-color);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 .adress:hover,
 .adress:focus {
